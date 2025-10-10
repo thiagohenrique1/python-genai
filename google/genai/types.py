@@ -11766,6 +11766,10 @@ class InlinedRequest(_common.BaseModel):
       description="""Content of the request.
       """,
   )
+  metadata: Optional[dict[str, str]] = Field(
+      default=None,
+      description="""The metadata to be associated with the request.""",
+  )
   config: Optional[GenerateContentConfig] = Field(
       default=None,
       description="""Configuration that contains optional model parameters.
@@ -11783,6 +11787,9 @@ class InlinedRequestDict(TypedDict, total=False):
   contents: Optional[ContentListUnionDict]
   """Content of the request.
       """
+
+  metadata: Optional[dict[str, str]]
+  """The metadata to be associated with the request."""
 
   config: Optional[GenerateContentConfigDict]
   """Configuration that contains optional model parameters.
