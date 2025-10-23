@@ -17,6 +17,8 @@
 """Tests for models.list."""
 
 
+from __future__ import annotations
+
 from .... import types
 from ... import pytest_helper
 

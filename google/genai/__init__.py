@@ -15,6 +15,8 @@
 
 """Google Gen AI SDK"""
 
+from __future__ import annotations
+
 from . import types
 from . import version
 from .client import Client

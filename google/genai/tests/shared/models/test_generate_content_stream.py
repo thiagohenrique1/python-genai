@@ -15,6 +15,8 @@
 
 """Tests for models.generate_content_stream()."""
 
+from __future__ import annotations
+
 from .... import types as genai_types
 from ... import pytest_helper
 from pydantic import BaseModel

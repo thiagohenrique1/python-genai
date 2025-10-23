@@ -15,6 +15,8 @@
 
 """Tests for async stream."""
 
+from __future__ import annotations
+
 import asyncio
 from typing import List
 from unittest import mock

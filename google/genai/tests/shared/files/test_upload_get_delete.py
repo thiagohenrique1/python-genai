@@ -15,6 +15,8 @@
 
 """Tests for files.upload(), files.get(), and files.delete()."""
 
+from __future__ import annotations
+
 from pydantic import BaseModel
 from ... import pytest_helper
 

@@ -16,6 +16,8 @@
 
 """Tests for tunings.list()."""
 
+from __future__ import annotations
+
 import pytest
 
 from ... import types as genai_types

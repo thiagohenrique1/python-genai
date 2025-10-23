@@ -19,3 +19,4 @@
 For AFC end to end test, please write test cases in
 test_generate_content_tools.py module
 """
+from __future__ import annotations

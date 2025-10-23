@@ -14,6 +14,8 @@
 #
 
 
+from __future__ import annotations
+
 from pydantic import BaseModel, ValidationError
 import pytest
 from ... import _transformers as t

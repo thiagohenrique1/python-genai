@@ -15,6 +15,8 @@
 
 """Tests for t_tool."""
 
+from __future__ import annotations
+
 import typing
 from typing import Any
 import pytest

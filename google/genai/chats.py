@@ -13,6 +13,8 @@
 # limitations under the License.
 #
 
+from __future__ import annotations
+
 from collections.abc import Iterator
 import sys
 from typing import AsyncIterator, Awaitable, Optional, Union, get_args

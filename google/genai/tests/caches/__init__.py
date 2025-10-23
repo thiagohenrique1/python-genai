@@ -15,3 +15,4 @@
 
 
 """Tests for the Google GenAI SDK's caches module."""
+from __future__ import annotations

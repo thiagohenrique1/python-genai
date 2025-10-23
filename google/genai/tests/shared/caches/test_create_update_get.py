@@ -15,6 +15,8 @@
 
 """Tests for caches.create(), caches.update(), and caches.get()."""
 
+from __future__ import annotations
+
 from .... import types as genai_types
 from ... import pytest_helper
 

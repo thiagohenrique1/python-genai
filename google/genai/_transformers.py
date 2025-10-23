@@ -15,6 +15,8 @@
 
 """Transformers for Google GenAI SDK."""
 
+from __future__ import annotations
+
 import base64
 from collections.abc import Iterable, Mapping
 from enum import Enum, EnumMeta
@@ -26,7 +28,7 @@ import sys
 import time
 import types as builtin_types
 import typing
-from typing import Any, GenericAlias, List, Optional, Sequence, Union  # type: ignore[attr-defined]
+from typing import Any, List, Optional, Sequence, Union
 from ._mcp_utils import mcp_to_gemini_tool
 from ._common import get_value_by_path as getv
 
@@ -39,6 +41,19 @@ from . import _api_client
 from . import _common
 from . import types
 
+try:
+  from typing import GenericAlias  # type: ignore[attr-defined]
+except ImportError:
+  GenericAlias = getattr(builtin_types, 'GenericAlias', tuple())  # type: ignore[assignment]
+
+try:
+  from typing import _UnionGenericAlias  # type: ignore[attr-defined]
+except ImportError:
+  try:
+    from typing import _GenericAlias as _UnionGenericAlias  # type: ignore[attr-defined]
+  except ImportError:
+    _UnionGenericAlias = typing.Any  # type: ignore[assignment]
+
 logger = logging.getLogger('google_genai._transformers')
 
 if sys.version_info >= (3, 10):
@@ -46,7 +61,7 @@ if sys.version_info >= (3, 10):
   _UNION_TYPES = (typing.Union, builtin_types.UnionType)
   from typing import TypeGuard
 else:
-  VersionedUnionType = typing._UnionGenericAlias  # type: ignore[attr-defined]
+  VersionedUnionType = _UnionGenericAlias  # type: ignore[assignment]
   _UNION_TYPES = (typing.Union,)
   from typing_extensions import TypeGuard
 

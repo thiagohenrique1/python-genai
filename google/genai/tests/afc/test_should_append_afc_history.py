@@ -15,6 +15,8 @@
 
 """Tests for _extra_utils.should_append_afc_history."""
 
+from __future__ import annotations
+
 from ... import types
 from ..._extra_utils import should_append_afc_history
 

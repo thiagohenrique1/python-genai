@@ -16,6 +16,8 @@
 
 """Tests for upscale_image."""
 
+from __future__ import annotations
+
 import os
 
 from pydantic import ValidationError

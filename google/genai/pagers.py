@@ -15,6 +15,8 @@
 
 """Pagers for the GenAI List APIs."""
 
+from __future__ import annotations
+
 # pylint: disable=protected-access
 
 import copy

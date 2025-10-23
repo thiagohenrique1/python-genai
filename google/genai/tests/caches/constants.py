@@ -16,6 +16,8 @@
 
 """Constants for caches tests."""
 
+from __future__ import annotations
+
 CACHED_CONTENT_NAME_MLDEV = 'cachedContents/op47f693jk6b'
 CACHED_CONTENT_NAME_VERTEX = 'cachedContents/1899938500610883584'
 

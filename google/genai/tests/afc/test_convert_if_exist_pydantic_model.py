@@ -16,6 +16,8 @@
 
 """Test convert_if_exist_pydantic_model."""
 
+from __future__ import annotations
+
 import inspect
 from typing import Optional, Union
 import pydantic

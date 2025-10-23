@@ -16,6 +16,8 @@
 
 """Tests for batches.list()."""
 
+from __future__ import annotations
+
 import pytest
 
 from ... import errors

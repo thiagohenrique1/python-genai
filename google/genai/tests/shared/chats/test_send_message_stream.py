@@ -15,6 +15,8 @@
 
 """Table tests for chats.send_message_stream()."""
 
+from __future__ import annotations
+
 from ... import pytest_helper
 from pydantic import BaseModel
 

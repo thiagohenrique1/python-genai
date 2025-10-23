@@ -14,6 +14,8 @@
 #
 
 """Base transformers for Google GenAI SDK."""
+from __future__ import annotations
+
 import base64
 
 # Some fields don't accept url safe base64 encoding.

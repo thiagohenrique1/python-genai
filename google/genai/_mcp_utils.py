@@ -15,6 +15,8 @@
 
 """Utils for working with MCP tools."""
 
+from __future__ import annotations
+
 from importlib.metadata import PackageNotFoundError, version
 import typing
 from typing import Any

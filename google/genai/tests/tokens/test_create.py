@@ -16,6 +16,8 @@
 
 """Tests for tokens.create()."""
 
+from __future__ import annotations
+
 import pytest
 
 from ... import types

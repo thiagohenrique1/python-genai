@@ -16,6 +16,8 @@
 
 """Tests for recontext_image."""
 
+from __future__ import annotations
+
 from .... import types
 from ... import pytest_helper
 

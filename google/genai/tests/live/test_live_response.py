@@ -14,6 +14,8 @@
 #
 
 """Tests for live response handling."""
+from __future__ import annotations
+
 import json
 from typing import cast
 from unittest import mock

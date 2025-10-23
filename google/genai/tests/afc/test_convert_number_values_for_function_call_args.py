@@ -16,6 +16,8 @@
 
 """Tests for convert_number_values_for_function_call_args."""
 
+from __future__ import annotations
+
 from ..._extra_utils import convert_number_values_for_function_call_args
 
 

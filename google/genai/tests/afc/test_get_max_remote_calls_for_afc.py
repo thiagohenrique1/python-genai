@@ -16,6 +16,8 @@
 
 """Tests for get_max_remote_calls_for_afc."""
 
+from __future__ import annotations
+
 from ... import types
 from ..._extra_utils import get_max_remote_calls_afc
 import pytest

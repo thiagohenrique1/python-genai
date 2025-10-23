@@ -16,6 +16,8 @@
 
 """Tests for models.compute_tokens()."""
 
+from __future__ import annotations
+
 from .... import types as genai_types
 from ... import pytest_helper
 

@@ -16,6 +16,8 @@
 
 """Test files get method."""
 
+from __future__ import annotations
+
 import pytest
 from ... import types
 from .. import pytest_helper

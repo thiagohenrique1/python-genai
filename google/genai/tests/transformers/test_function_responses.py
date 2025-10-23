@@ -15,6 +15,8 @@
 
 
 """Tests for live.py."""
+from __future__ import annotations
+
 from ... import types
 from ... import _transformers as t
 

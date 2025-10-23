@@ -16,6 +16,8 @@
 
 """Tests for edit_image."""
 
+from __future__ import annotations
+
 import os
 
 from .... import types

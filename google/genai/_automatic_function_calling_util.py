@@ -13,6 +13,8 @@
 # limitations under the License.
 #
 
+from __future__ import annotations
+
 import inspect
 import sys
 import types as builtin_types
@@ -24,11 +26,20 @@ import pydantic
 from . import _extra_utils
 from . import types
 
+try:
+  from typing import _UnionGenericAlias  # type: ignore[attr-defined]
+except ImportError:
+  try:
+    from typing import _GenericAlias as _UnionGenericAlias  # type: ignore[attr-defined]
+  except ImportError:
+    _UnionGenericAlias = typing.Any  # type: ignore[assignment]
+
+GenericAliasType = getattr(builtin_types, 'GenericAlias', None)
 
 if sys.version_info >= (3, 10):
   VersionedUnionType = builtin_types.UnionType
 else:
-  VersionedUnionType = typing._UnionGenericAlias  # type: ignore[attr-defined]
+  VersionedUnionType = _UnionGenericAlias  # type: ignore[assignment]
 
 
 __all__ = [
@@ -101,7 +112,10 @@ def _is_default_value_compatible(
 
   if (
       isinstance(annotation, _GenericAlias)
-      or isinstance(annotation, builtin_types.GenericAlias)
+      or (
+          GenericAliasType is not None
+          and isinstance(annotation, GenericAliasType)
+      )
       or isinstance(annotation, VersionedUnionType)
   ):
     origin = get_origin(annotation)
@@ -199,8 +213,12 @@ def _parse_schema_from_parameter(  # type: ignore[return]
         raise ValueError(default_value_error_msg)
       schema.default = param.default
     return schema
-  if isinstance(param.annotation, _GenericAlias) or isinstance(
-      param.annotation, builtin_types.GenericAlias
+  if (
+      isinstance(param.annotation, _GenericAlias)
+      or (
+          GenericAliasType is not None
+          and isinstance(param.annotation, GenericAliasType)
+      )
   ):
     origin = get_origin(param.annotation)
     args = get_args(param.annotation)

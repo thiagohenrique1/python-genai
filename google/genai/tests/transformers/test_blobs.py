@@ -16,6 +16,8 @@
 
 """Tests t_bytes methods in the _transformers module."""
 
+from __future__ import annotations
+
 import os
 
 import PIL.Image

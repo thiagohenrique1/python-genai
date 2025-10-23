@@ -16,6 +16,8 @@
 
 """Tests for batches._create_embeddings()"""
 
+from __future__ import annotations
+
 import pytest
 
 from ... import types

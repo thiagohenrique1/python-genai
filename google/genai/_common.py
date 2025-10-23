@@ -15,6 +15,8 @@
 
 """Common utilities for the SDK."""
 
+from __future__ import annotations
+
 import base64
 import collections.abc
 import datetime
@@ -23,7 +25,7 @@ import functools
 import logging
 import re
 import typing
-from typing import Any, Callable, FrozenSet, Optional, Union, get_args, get_origin
+from typing import Any, Callable, Dict, FrozenSet, Optional, Union, get_args, get_origin
 import uuid
 import warnings
 import pydantic
@@ -32,7 +34,7 @@ from typing_extensions import TypeAlias
 
 logger = logging.getLogger('google_genai._common')
 
-StringDict: TypeAlias = dict[str, Any]
+StringDict: TypeAlias = Dict[str, Any]
 
 
 class ExperimentalWarning(Warning):

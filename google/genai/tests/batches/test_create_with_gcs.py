@@ -16,6 +16,8 @@
 
 """Tests for batches.create() with Google Cloud Storage source."""
 
+from __future__ import annotations
+
 import pytest
 
 from ... import types

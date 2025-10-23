@@ -16,6 +16,8 @@
 
 """Test for the code sample for Gemini text-only request."""
 
+from __future__ import annotations
+
 from .. import pytest_helper
 
 pytestmark = pytest_helper.setup(file=__file__)

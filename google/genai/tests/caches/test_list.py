@@ -16,6 +16,8 @@
 
 """Test caches list method."""
 
+from __future__ import annotations
+
 import pytest
 from ... import types
 from .. import pytest_helper

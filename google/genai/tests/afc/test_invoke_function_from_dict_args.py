@@ -16,6 +16,8 @@
 
 """Test invoke_function_from_dict_args."""
 
+from __future__ import annotations
+
 from typing import Union
 import pydantic
 import pytest

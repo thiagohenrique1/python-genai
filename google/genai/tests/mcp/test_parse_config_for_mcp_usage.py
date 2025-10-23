@@ -13,6 +13,8 @@
 # limitations under the License.
 #
 
+from __future__ import annotations
+
 import re
 import pytest
 from ... import _extra_utils

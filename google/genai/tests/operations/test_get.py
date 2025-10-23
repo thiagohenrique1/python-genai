@@ -16,6 +16,8 @@
 
 """Tests for operations._get."""
 
+from __future__ import annotations
+
 from .. import pytest_helper
 from ... import types
 

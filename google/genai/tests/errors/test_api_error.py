@@ -19,6 +19,8 @@
 End to end tests should be in models/test_generate_content.py.
 """
 
+from __future__ import annotations
+
 import httpx
 import pytest
 

@@ -15,6 +15,8 @@
 
 """Tests for batches.list()."""
 
+from __future__ import annotations
+
 from .... import types as genai_types
 from ... import pytest_helper
 

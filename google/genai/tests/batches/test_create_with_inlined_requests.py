@@ -15,6 +15,8 @@
 
 
 """Tests for batches.create() with inlined requests."""
+from __future__ import annotations
+
 import base64
 import copy
 import datetime

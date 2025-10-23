@@ -16,6 +16,8 @@
 
 """Tests for generate_content_part."""
 
+from __future__ import annotations
+
 import base64
 import os
 

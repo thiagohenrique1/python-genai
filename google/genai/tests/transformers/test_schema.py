@@ -16,6 +16,8 @@
 
 """Tests schema processing methods in the _transformers module."""
 
+from __future__ import annotations
+
 import copy
 from typing import Union
 

@@ -16,6 +16,8 @@
 
 """Tests for generate_images."""
 
+from __future__ import annotations
+
 import pytest
 
 from ... import types

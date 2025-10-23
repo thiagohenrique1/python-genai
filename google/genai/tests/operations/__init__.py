@@ -15,3 +15,4 @@
 
 
 """Tests for operations.get."""
+from __future__ import annotations

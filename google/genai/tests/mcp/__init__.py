@@ -15,3 +15,4 @@
 
 
 """Tests for the Google GenAI SDK's _mcp_utils module."""
+from __future__ import annotations

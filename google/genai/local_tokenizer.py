@@ -15,6 +15,8 @@
 
 """[Experimental] Text Only Local Tokenizer."""
 
+from __future__ import annotations
+
 import logging
 from typing import Any, Iterable
 from typing import Optional, Union

@@ -16,6 +16,8 @@
 
 """Tests for should_disable_afc."""
 
+from __future__ import annotations
+
 import pytest
 from ... import types
 from ..._extra_utils import should_disable_afc

@@ -15,6 +15,8 @@
 
 
 """Tests for live.py."""
+from __future__ import annotations
+
 import base64
 import json
 from unittest import mock

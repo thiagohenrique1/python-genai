@@ -15,6 +15,8 @@
 
 """Tests for get_function_map."""
 
+from __future__ import annotations
+
 import typing
 from typing import Any
 import pytest

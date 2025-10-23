@@ -14,6 +14,8 @@
 #
 
 
+from __future__ import annotations
+
 from ... import types
 from ...chats import _validate_response
 

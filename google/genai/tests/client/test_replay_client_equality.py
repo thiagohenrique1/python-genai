@@ -16,6 +16,8 @@
 
 """Tests replay client correctly compares requests ignoring key casing."""
 
+from __future__ import annotations
+
 from ... import _replay_api_client
 from ... import types
 

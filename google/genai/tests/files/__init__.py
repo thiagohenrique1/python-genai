@@ -15,3 +15,4 @@
 
 
 """Tests for the Google GenAI SDK's files module."""
+from __future__ import annotations

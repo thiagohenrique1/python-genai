@@ -15,6 +15,8 @@
 
 """Tests for t_parts."""
 
+from __future__ import annotations
+
 import pytest
 import pydantic
 

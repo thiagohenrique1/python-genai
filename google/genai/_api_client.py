@@ -19,6 +19,8 @@
 The BaseApiClient is intended to be a private module and is subject to change.
 """
 
+from __future__ import annotations
+
 import asyncio
 from collections.abc import Generator
 import copy

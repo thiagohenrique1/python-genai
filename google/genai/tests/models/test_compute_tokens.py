@@ -14,6 +14,8 @@
 #
 
 
+from __future__ import annotations
+
 import pytest
 from ... import _transformers as t
 from ... import types

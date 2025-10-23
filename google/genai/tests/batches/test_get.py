@@ -16,6 +16,8 @@
 
 """Tests for batches.get()."""
 
+from __future__ import annotations
+
 import pytest
 
 from ... import types

@@ -13,4 +13,6 @@
 # limitations under the License.
 #
 
+from __future__ import annotations
+
 __version__ = '1.46.0' # x-release-please-version

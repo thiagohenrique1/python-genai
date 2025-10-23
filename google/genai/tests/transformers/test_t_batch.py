@@ -15,6 +15,8 @@
 
 """Tests for t_batch."""
 
+from __future__ import annotations
+
 import pytest
 from ... import _transformers as t
 from ... import client as google_genai_client_module

@@ -16,6 +16,8 @@
 
 """Tests for tunings.tune()."""
 
+from __future__ import annotations
+
 import time
 from ... import _replay_api_client
 from ... import types as genai_types

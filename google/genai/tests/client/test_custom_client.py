@@ -14,6 +14,8 @@
 #
 
 """Tests for custom clients."""
+from __future__ import annotations
+
 import asyncio
 from unittest import mock
 

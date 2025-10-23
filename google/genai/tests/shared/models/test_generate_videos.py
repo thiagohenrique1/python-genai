@@ -14,6 +14,8 @@
 #
 """Tests for generate_videos."""
 
+from __future__ import annotations
+
 import os
 from .... import types
 from ... import pytest_helper

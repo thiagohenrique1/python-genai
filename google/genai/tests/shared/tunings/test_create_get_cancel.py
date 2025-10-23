@@ -16,6 +16,8 @@
 
 """Tests tunings.tune(), tunings.get(), tunings.cancel()."""
 
+from __future__ import annotations
+
 from .... import types as genai_types
 from ... import pytest_helper
 

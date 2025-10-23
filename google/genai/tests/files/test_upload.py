@@ -17,6 +17,8 @@
 """Test files upload method."""
 
 
+from __future__ import annotations
+
 import io
 import pathlib
 import pytest

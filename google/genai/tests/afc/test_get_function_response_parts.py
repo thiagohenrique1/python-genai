@@ -16,6 +16,8 @@
 
 """Tests for get_function_response_parts."""
 
+from __future__ import annotations
+
 import typing
 from typing import Any
 import pytest

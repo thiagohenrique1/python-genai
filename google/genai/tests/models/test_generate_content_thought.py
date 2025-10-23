@@ -13,6 +13,8 @@
 # limitations under the License.
 #
 
+from __future__ import annotations
+
 from ... import _api_client
 from ... import _transformers as t
 from ... import errors

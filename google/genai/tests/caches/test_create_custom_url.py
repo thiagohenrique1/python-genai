@@ -14,6 +14,8 @@
 #
 
 
+from __future__ import annotations
+
 import copy
 import pytest
 from ... import types

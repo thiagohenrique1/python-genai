@@ -15,6 +15,8 @@
 
 """Utilities for the API Modules of the Google Gen AI SDK."""
 
+from __future__ import annotations
+
 from typing import Optional
 from . import _api_client
 

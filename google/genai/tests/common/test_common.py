@@ -16,6 +16,8 @@
 
 """Tests tools in the _common module."""
 
+from __future__ import annotations
+
 from enum import Enum
 import inspect
 import logging

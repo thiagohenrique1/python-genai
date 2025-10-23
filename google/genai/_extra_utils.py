@@ -15,6 +15,8 @@
 
 """Extra utils depending on types that are shared between sync and async modules."""
 
+from __future__ import annotations
+
 import inspect
 import io
 import logging
@@ -36,7 +38,7 @@ from ._adapters import McpToGenAiToolAdapter
 if sys.version_info >= (3, 10):
   from types import UnionType
 else:
-  UnionType = typing._UnionGenericAlias  # type: ignore[attr-defined]
+  UnionType = Union  # type: ignore[assignment]
 
 if typing.TYPE_CHECKING:
   from mcp import ClientSession as McpClientSession

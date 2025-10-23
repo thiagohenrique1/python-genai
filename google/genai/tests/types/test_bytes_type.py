@@ -14,6 +14,8 @@
 #
 
 
+from __future__ import annotations
+
 import base64
 from datetime import datetime
 from typing import Any, Optional
